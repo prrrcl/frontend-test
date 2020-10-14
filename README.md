@@ -10,7 +10,7 @@ El objetivo es valorar tu capacidad de comprensión, toma de decisiones, mejora 
 
 ## ¿Cómo empezar?
 
-1. Aquí tienes el [link al diseño en Figma](https://www.figma.com/file/bZ5WjEAxAZnCOmNXMnKbXJ/Frontend-Developer-Test?node-id=20%3A100)
+1. Aquí tienes el [link al diseño en Figma](https://www.figma.com/file/bZ5WjEAxAZnCOmNXMnKbXJ/Frontend-Developer-Test)
 2. Hacer un repositorio nuevo utilizando este como base **(sin hacer un fork)**.
 3. Hacer al menos un primer commit con el código original, para ver la hora de inicio.
 4. Hacer commits individuales por cada bloque que vayas haciendo. El último commit marca el final.
