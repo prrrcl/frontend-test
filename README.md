@@ -41,6 +41,7 @@ Eres libre de modificar cualquier parte del código y/o estructura del proyecto,
 - [ ] Solucionar el funcionamiento de la ventana modal del formulario de contacto
 - [ ] Añadir estilos a la navegación entre proyectos en la página de detalle de proyecto (`sanderson.jsx`)
 - [ ] Afinar la maquetación al diseño proporcionado
+- [ ] Optimización de las imágenes para dispositivos
 - [ ] Mejorar la carga de recursos (tipografías, imágenes, etc) para mejorar la performance
 - [ ] Compatibilidad en las 2 últimas versiones de navegadores
 
