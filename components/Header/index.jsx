@@ -11,8 +11,6 @@ import { Power3, TweenMax, CSSPlugin  } from 'gsap';
 
 const C = CSSPlugin; 
 
-
-
 const Header = () => {
   const { menu, toggleContactModal, toggleMenu } = useAppContext();
 
