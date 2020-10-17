@@ -1,4 +1,5 @@
 import { withFormik } from 'formik';
+import * as Yup from 'yup'
 
 import Form from './Form';
 import { useAppContext } from 'contexts/AppContext';
@@ -25,7 +26,7 @@ const ContactForm = withFormik({
     });
   },
   handleSubmit: async (values, { setSubmitting }) => {
-    await new Promise(r => setTimeout(r, 500));
+    await new Promise(r => setTimeout(r(), 500));
     setSubmitting(false);
   }
 })(Form);
@@ -36,7 +37,7 @@ const ContactModal = () => {
   return (
     <div className={`${styles.modal} ${contactModal && styles.active}`}>
       <div className="container container--small">
-        <Cross className={styles.close} />
+        <Cross onClick={toggleContactModal} className={styles.close} />
         <ContactForm
           maxlength="Este campo no debe ser mayor de xx caracteres"
           required="Este campo es obligatorio"
