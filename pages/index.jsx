@@ -5,8 +5,17 @@ import Footer from 'components/Footer';
 import Header from 'components/Header';
 import ContactMe from 'components/ContactMe';
 import ContactModal from 'components/ContactModal';
-import styles from 'styles/Home.module.scss';
+import HeaderContent from 'components/HeaderContent';
 
+const HeaderInfo = {
+  title: 'Hola, soy Jonas Kahnwald, diseñador de interiores',
+  button: {
+    link: '#about',
+    label: 'Sobre mí',
+    className: 'button'
+  },
+  img: '/main-image.jpg'
+}
 const Home = () => {
   return (
     <>
@@ -17,15 +26,11 @@ const Home = () => {
 
       <Header />
       <main className="container">
-        <section className={styles.billboard}>
-          <img src="/main-image.jpg" />
-          <div className={styles.intro}>
-            <h1>Hola, soy Jonas Kahnwald, diseñador de interiores</h1>
-            <a className="button" href="#about">
-              Sobre mí
-            </a>
-          </div>
-        </section>
+        <HeaderContent 
+          img={HeaderInfo.img}
+          title={HeaderInfo.title} 
+          button={HeaderInfo.button}
+        />
         <section id="about">
           <div className="grid">
             <div className="column">

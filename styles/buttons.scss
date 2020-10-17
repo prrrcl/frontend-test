@@ -1,10 +1,25 @@
 @import "./variables";
 
 .button {
-  background: $primary;
-  color: $light;
+    display: inline-block;
+    background: $primary;
+    color: $light;
+    border-radius: 2px;
+    min-width: 180px;
+    padding: 10px 50px;
+    text-transform: uppercase;
 
-  &--hollow {
+    &:hover {
+        background: transparentize($color: $primary, $amount: 0.3);
+    }
 
-  }
+    &--hollow {
+        background: none;
+        color: $primary;
+        border: 1px solid $primary;
+
+        &:hover {
+            color: $light;
+        }
+    }
 }

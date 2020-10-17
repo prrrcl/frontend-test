@@ -6,6 +6,21 @@ import Header from 'components/Header';
 import ContactMe from 'components/ContactMe';
 import ContactModal from 'components/ContactModal';
 import styles from 'styles/Portfolio.module.scss';
+import HeaderContent from 'components/HeaderContent';
+
+const HeaderInfo = {
+  title: 'Sanderson',
+  button: {
+    link: '/portfolio/sanderson',
+    label: 'Ver proyecto',
+    className: 'button button--hollow'
+  },
+  img: '/sanderson.jpg',
+  desc: `Mental games, optical illusions, to eccentricities, to dreams, to successful
+  impossibilities. When you arrive in the hotel, you do not really understand what is
+  going on. Nothing is really in its place, nothing really has its true volume, its true
+  size.`
+}
 
 const Portfolio = () => {
   return (
@@ -17,21 +32,12 @@ const Portfolio = () => {
 
       <Header />
       <main className="container">
-        <section className={styles.billboard}>
-          <img src="/sanderson.jpg" />
-          <div className={styles.intro}>
-            <h2>Sanderson</h2>
-            <p>
-              Mental games, optical illusions, to eccentricities, to dreams, to successful
-              impossibilities. When you arrive in the hotel, you do not really understand what is
-              going on. Nothing is really in its place, nothing really has its true volume, its true
-              size.
-            </p>
-            <Link href="/portfolio/sanderson">
-              <a className="button button--hollow">Ver proyecto</a>
-            </Link>
-          </div>
-        </section>
+        <HeaderContent 
+          img={HeaderInfo.img}
+          title={HeaderInfo.title} 
+          desc={HeaderInfo.desc}
+          button={HeaderInfo.button} 
+        />
         <section>
           <div className={`${styles.work} grid`}>
             <div className="column">
