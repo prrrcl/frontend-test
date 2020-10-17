@@ -5,6 +5,7 @@ import Cross from 'public/cross.svg';
 import Menu from 'public/menu.svg';
 import Logo from 'public/logo.svg';
 import styles from './Header.module.scss';
+import ActiveLink from 'components/ActiveLink';
 
 const Header = () => {
   const { menu, toggleContactModal, toggleMenu } = useAppContext();
@@ -19,14 +20,14 @@ const Header = () => {
       <nav className={`${styles.nav} ${menu ? styles.active : ''}`}>
         <ul className={styles.navList}>
           <li>
-            <Link href="/">
+            <ActiveLink href="/">
               <a className={styles.link}>Home</a>
-            </Link>
+            </ActiveLink>
           </li>
           <li>
-            <Link href="/portfolio">
+            <ActiveLink href="/portfolio">
               <a className={styles.link}>Portfolio</a>
-            </Link>
+            </ActiveLink>
           </li>
           <li>
             <a className={styles.link} onClick={toggleContactModal}>Contáctame</a>
