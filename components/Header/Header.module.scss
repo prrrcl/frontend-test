@@ -23,6 +23,19 @@
   }
 }
 
+.navList {
+  display: flex;
+  li {
+    cursor: pointer;
+  }
+}
+
+.burguerToggler {
+  outline: none;
+  border: 0;
+  background: none;
+}
+
 .link {
   margin: 0 2.5rem;
 
