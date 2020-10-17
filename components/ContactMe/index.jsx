@@ -1,6 +1,6 @@
 import styles from './ContactMe.module.scss';
 
-import { useAppContext } from '../../contexts/AppContext';
+import { useAppContext } from 'contexts/AppContext';
 
 const ContactMe = () => {
   const { toggleContactModal } = useAppContext();

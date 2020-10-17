@@ -1,3 +1,5 @@
+@import './mixins';
+
 $dark: #1a1a1a;
 $neutro: #848484;
 $light: #fff;
@@ -6,3 +8,11 @@ $error: #f5625e;
 
 $primaryFont: 'Work Sans', sans-serif;
 $secondaryFont: 'Crimson Text', serif;
+
+$breakpoints: (
+  small: 375px,
+  medium: 768px,
+  large: 1024px,
+  xlarge: 1280px,
+  xxlarge: 1600px,
+);

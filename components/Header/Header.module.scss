@@ -1,50 +1,95 @@
-@import '../../styles/variables';
+@import "../../styles/variables";
 
-.header, .nav {
-  align-items: center;
-  display: flex;
+.header,
+.nav {
+    align-items: center;
+    display: flex;
 }
 
 .header {
-  justify-content: space-between;
-  margin-bottom: 1.25rem;
-  padding-bottom: .625rem;
-  padding-top: .625rem;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.625rem;
+    padding-top: 0.625rem;
+    & > a {
+        z-index: 99;
+    }
 }
 
 .nav {
-  opacity: 0;
-  position: absolute;
-  z-index: -1;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    &.disabled {
+        pointer-events: none;
+    }
+    &.active {
+        z-index: 2;
+        background: $light;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
-  &.active {
-    opacity: 1;
-    z-index: 2;
-  }
+.navList {
+    display: flex;
+    flex-direction: column;
+    @include media("medium") {
+        flex-direction: row;
+    }
+    li {
+        cursor: pointer;
+        text-align: center;
+        margin-bottom: 45px;
+        @include media("medium") {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.burguerToggler {
+    outline: none;
+    border: 0;
+    background: none;
 }
 
 .link {
-  margin: 0 2.5rem;
+    @include media("medium") {
+        margin: 0 2.5rem;
 
-  &:last-child { margin-right: 0; }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 
-  &.active,
-  &:hover {
-    color: $primary;
-  }
+    &.active,
+    &:hover {
+        color: $primary;
+    }
+}
+
+.trigger {
+    z-index: 99;
 }
 
 @media (min-width: 48em) {
-  .header {
-    padding-bottom: 1.875rem;
-    padding-top: 1.875rem;
-  }
+    .header {
+        padding-bottom: 1.875rem;
+        padding-top: 1.875rem;
+    }
 
-  .trigger { display: none; }
+    .trigger {
+        display: none;
+    }
 
-  .nav {
-    opacity: 1;
-    position: initial;
-    z-index: 1;
-  }
+    .nav {
+        opacity: 1;
+        position: initial;
+        z-index: 1;
+    }
 }

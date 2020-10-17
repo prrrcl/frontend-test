@@ -1,5 +1,5 @@
-import { AppContextProvider } from '../contexts/AppContext';
-import '../styles/globals.scss';
+import { AppContextProvider } from 'contexts/AppContext';
+import 'styles/globals.scss';
 
 const MyApp = ({ Component, pageProps }) => {
   return (
