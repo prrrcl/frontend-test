@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
-import { useAppContext } from '../../contexts/AppContext';
-import Cross from '../../public/cross.svg';
-import Menu from '../../public/menu.svg';
-import Logo from '../../public/logo.svg';
+import { useAppContext } from 'contexts/AppContext';
+import Cross from 'public/cross.svg';
+import Menu from 'public/menu.svg';
+import Logo from 'public/logo.svg';
 import styles from './Header.module.scss';
 
 const Header = () => {

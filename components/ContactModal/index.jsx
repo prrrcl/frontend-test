@@ -1,8 +1,8 @@
 import { withFormik } from 'formik';
 
 import Form from './Form';
-import { useAppContext } from '../../contexts/AppContext';
-import Cross from '../../public/cross.svg';
+import { useAppContext } from 'contexts/AppContext';
+import Cross from 'public/cross.svg';
 import styles from './ContactModal.module.scss';
 
 const ContactForm = withFormik({

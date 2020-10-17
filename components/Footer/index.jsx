@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
-import Logo from '../../public/logo.svg';
-import Behance from '../../public/behance.svg';
-import Twitter from '../../public/twitter.svg';
-import Linkedin from '../../public/linkedin.svg';
+import Logo from 'public/logo.svg';
+import Behance from 'public/behance.svg';
+import Twitter from 'public/twitter.svg';
+import Linkedin from 'public/linkedin.svg';
 import styles from './Footer.module.scss';
 
 const Footer = () => {

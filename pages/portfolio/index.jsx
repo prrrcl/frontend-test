@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
-import Footer from '../../components/Footer';
-import Header from '../../components/Header';
-import ContactMe from '../../components/ContactMe';
-import ContactModal from '../../components/ContactModal';
-import styles from '../../styles/Portfolio.module.scss';
+import Footer from 'components/Footer';
+import Header from 'components/Header';
+import ContactMe from 'components/ContactMe';
+import ContactModal from 'components/ContactModal';
+import styles from 'styles/Portfolio.module.scss';
 
 const Portfolio = () => {
   return (
