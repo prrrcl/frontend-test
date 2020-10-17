@@ -1,18 +1,19 @@
-import { useContext, useEffect, useState, useMemo, createContext } from 'react';
+import { useContext, useEffect, useState, useMemo, createContext, useCallback, useRef } from 'react';
 
 export const AppContext = createContext(null);
 
 export const AppContextProvider = ({ children }) => {
   const [menu, setMenu] = useState(false);
   const [contactModal, setContactModal] = useState(false);
+  const ref = useRef(true)
 
-  const toggleContactModal = () => {
-    setContactModal(!contactModal);
-  };
+  const toggleContactModal = useCallback(() => {
+    ref && setContactModal(old => !old);
+  }, [ref]);
 
-  const toggleMenu = () => {
-    setMenu(!menu);
-  };
+  const toggleMenu = useCallback(() => {
+    ref && setMenu(old => !old);
+  }, [ref]);
 
   const values = useMemo(
     () => ({
