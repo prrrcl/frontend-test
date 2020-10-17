@@ -1,10 +1,84 @@
 @import '../../styles/variables';
 
+$marginItems: 35px;
+
 .footer {
   background: $dark;
   color: $light;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  @include media('medium') {
+    height: 140px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 80px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &:first-child{
+      padding-top: $marginItems;
+
+      @include media('medium') {
+        flex-direction: row;
+        padding-top: 0;
+      }
+    }
+
+    &:last-child {
+      margin-top: calc(#{$marginItems} * 3);
+
+      @include media('medium') {
+        margin: 0;
+      }
+
+      ul{
+        display: flex;
+
+        li{
+          margin: $marginItems;
+        }
+      }
+    }
+  }
+}
+
+.navList{
+  li {
+    margin-bottom: $marginItems;
+
+    @include media('medium') {
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  @include media('medium') {
+    display: flex;
+
+  }
 }
 
 .logo {
   path { fill: $light; }
+  margin-bottom: $marginItems;
+  
+  @include media('medium') {
+    margin-bottom: 0;
+  }
+}
+
+.link {
+  @include media('medium') {
+    margin-left: 2.5rem;
+  }
 }

@@ -9,12 +9,12 @@ import styles from './Footer.module.scss';
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <Link href="/">
-        <a>
-          <Logo className={styles.logo} />
-        </a>
-      </Link>
       <nav>
+        <Link href="/">
+          <a>
+            <Logo className={styles.logo} />
+          </a>
+        </Link>
         <ul className={styles.navList}>
           <li>
             <Link href="/">
