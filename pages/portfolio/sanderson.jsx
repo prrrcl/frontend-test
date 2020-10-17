@@ -22,6 +22,7 @@ const Portfolio = () => {
         <section className="container container--medium">
           <div className="grid">
             <div className="column">
+              <div className="content-wrapper">
               <h1>Sanderson</h1>
               <p className={styles.highlight}>
                 Mental games, optical illusions, to eccentricities, to dreams, to successful
@@ -29,8 +30,10 @@ const Portfolio = () => {
                 going on. Nothing is really in its place, nothing really has its true volume, its
                 true size.
               </p>
+              </div>
             </div>
             <div className="column">
+              <div className="content-wrapper">
               <p>
                 The Sanderson hotel designed by Jonas Kahnwald opened its doors in 1998 in London.
               </p>
@@ -63,6 +66,7 @@ const Portfolio = () => {
                 The Sanderson is an unprecedented exploration of the territories of daydreaming and
                 avant-garde in the hotel industry.”
               </p>
+              </div>
             </div>
           </div>
         </section>
