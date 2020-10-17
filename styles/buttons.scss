@@ -1,6 +1,7 @@
 @import "./variables";
 
 .button {
+    cursor: pointer;
     display: inline-block;
     background: $primary;
     color: $light;
@@ -8,6 +9,7 @@
     min-width: 180px;
     padding: 10px 50px;
     text-transform: uppercase;
+    text-decoration: none;
 
     &:hover {
         background: transparentize($color: $primary, $amount: 0.3);
