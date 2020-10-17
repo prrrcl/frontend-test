@@ -1,9 +1,13 @@
 .container {
-  margin: 0 auto;
-  max-width: 80rem;
-  padding: 0 1.25rem;
-  width: 100%;
+    margin: 0 auto;
+    max-width: 80rem;
+    padding: 0 1.25rem;
+    width: 100%;
 
-  &--medium { max-width: 64rem; }
-  &--small { max-width: 40rem; }
+    &--medium {
+        max-width: 64rem;
+    }
+    &--small {
+        max-width: 40rem;
+    }
 }
